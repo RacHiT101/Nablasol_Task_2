@@ -1,5 +1,6 @@
 import { useState } from "react";
 import TabNavigation from "./TabNavigation";
+import { IoIosArrowForward } from "react-icons/io";
 
 const CreateAccountForm = ({goNext}) => {
     
@@ -157,12 +158,12 @@ const CreateAccountForm = ({goNext}) => {
           </div>
 
           <div className="flex justify-end px-8 mb-4">
-            <button
-              type="submit"
-              className="py-2 px-4 bg-blue-500 text-white rounded-md shadow-sm hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
-            >
-              Next Step
-            </button>
+          <button
+            type="submit"
+            className="py-2 px-2 gap-1 flex items-center bg-purple-600 text-white border border-purple-600 rounded-md shadow-sm hover:bg-white hover:text-purple-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+          >
+            Next Step <IoIosArrowForward />
+          </button>
           </div>
         </form>
      
